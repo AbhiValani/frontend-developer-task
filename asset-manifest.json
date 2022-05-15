@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/nowAndme/static/css/main.69e7c733.chunk.css",
+    "main.js": "/nowAndme/static/js/main.8d184676.chunk.js",
+    "main.js.map": "/nowAndme/static/js/main.8d184676.chunk.js.map",
+    "runtime-main.js": "/nowAndme/static/js/runtime-main.a37d83bb.js",
+    "runtime-main.js.map": "/nowAndme/static/js/runtime-main.a37d83bb.js.map",
+    "static/js/2.535e9aa7.chunk.js": "/nowAndme/static/js/2.535e9aa7.chunk.js",
+    "static/js/2.535e9aa7.chunk.js.map": "/nowAndme/static/js/2.535e9aa7.chunk.js.map",
+    "index.html": "/nowAndme/index.html",
+    "static/css/main.69e7c733.chunk.css.map": "/nowAndme/static/css/main.69e7c733.chunk.css.map",
+    "static/js/2.535e9aa7.chunk.js.LICENSE.txt": "/nowAndme/static/js/2.535e9aa7.chunk.js.LICENSE.txt",
+    "static/media/boy_profile.ffa2b282.png": "/nowAndme/static/media/boy_profile.ffa2b282.png",
+    "static/media/girl_profile.24b837a0.png": "/nowAndme/static/media/girl_profile.24b837a0.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a37d83bb.js",
+    "static/js/2.535e9aa7.chunk.js",
+    "static/css/main.69e7c733.chunk.css",
+    "static/js/main.8d184676.chunk.js"
+  ]
+}
