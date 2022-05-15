@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import FormField from '../FormField';
+import Login from '../Login';
 import RecentPosts from '../RecentPosts';
 import Register from '../Register';
 import './Home.scss';
@@ -10,6 +11,7 @@ const content='How are you doing today? Would you like to share something with t
 function Home() {
 	const [posts, setPosts] = useState([]);
 	const [registerPopup, setRegisterPopup] = useState(false);
+	const [loginPopup, setLoginPopup] = useState(false);
 	useEffect(() => {
 		setPosts(getPosts());
 	},[]);
@@ -23,7 +25,7 @@ function Home() {
 	}
 	return (
 		<>
-			<div className={`home-ctr center ${registerPopup ? 'bg-blur': ''}`}>
+			<div className={`home-ctr center ${(registerPopup || loginPopup) ? 'bg-blur': ''}`}>
 				<div className='header'>
 					<div className='home-title'>Hello {name}</div>
 					<div className='home-subtitle'>{content}</div>
@@ -55,7 +57,13 @@ function Home() {
 			{
 				registerPopup ?
 					<div className='flex--row center popup'>
-						<Register closable={true} setVisible={setRegisterPopup} />
+						<Register closable={true} setVisible={setRegisterPopup} setLoginPopup={setLoginPopup} />
+					</div> : null
+			}
+			{
+				loginPopup ?
+					<div className='flex--row center popup'>
+						<Login closable={true} setVisible={setLoginPopup} setRegisterPopup={setRegisterPopup} />
 					</div> : null
 			}
 		</>

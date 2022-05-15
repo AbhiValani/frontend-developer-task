@@ -6,10 +6,15 @@ import { ArrowRightOutlined, CloseOutlined } from '@ant-design/icons';
 import { useNavigate } from 'react-router-dom';
 
 function Register(props) {
-	const { closable, setVisible } = props;
+	const { closable, setVisible, setLoginPopup } = props;
 	const navigate = useNavigate();
 	function onLoginClick() {
-		// Will redirect to main login page
+		// Will redirect to main login page , if request is from home page then open a login popup
+		if(closable) {
+			setVisible(false);
+			setLoginPopup(true);
+			return;
+		}
 		navigate('/');
 	}
 	function onRegisterClick() {
@@ -66,4 +71,5 @@ export default Register;
 Register.propTypes = {
 	closable: PropTypes.bool,
 	setVisible:PropTypes.func,
+	setLoginPopup:PropTypes.func,
 };

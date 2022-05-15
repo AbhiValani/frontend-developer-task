@@ -1,10 +1,12 @@
 import './Login.scss';
 import React from 'react';
 import FormField from '../FormField';
-import { ArrowRightOutlined } from '@ant-design/icons';
+import { ArrowRightOutlined, CloseOutlined } from '@ant-design/icons';
 import { useNavigate } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
-function Login() {
+function Login(props) {
+	const { closable, setVisible, setRegisterPopup } = props;
 	const navigate = useNavigate();
 	function onForgotPassword() {
 		// Currently We don't have forgot-password page
@@ -16,11 +18,22 @@ function Login() {
 		navigate('/home');
 	}
 	function onRegisterClick() {
-		// Will redirect to register popup		
+		// Will redirect to main Register page , if request is from home page then open a register popup
+		if(closable) {
+			setVisible(false);
+			setRegisterPopup(true);
+			return;
+		}
 		navigate('/register');
 	}
 	return (
 		<div className="login-ctr">
+			{
+				closable ?
+					<div className='close-icon'>
+						<CloseOutlined onClick={() => setVisible(false)}/>
+					</div> : null
+			}
 			<div className='flex--column center'>
 				<div className='subtitle'>WELCOME BACK</div>
 				<div className='title'>Log into your account</div>
@@ -55,3 +68,8 @@ function Login() {
 }
 
 export default Login;
+Login.propTypes = {
+	closable: PropTypes.bool,
+	setVisible:PropTypes.func,
+	setRegisterPopup: PropTypes.func,
+};
