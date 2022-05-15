@@ -1,0 +1,99 @@
+.form-field-ctr{
+    margin-bottom: 16px;
+    .field-title{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #C5C7CA;
+        .query-field{
+            font-size: 12px;
+        }
+        .query-field:hover{
+            cursor: pointer;
+        }
+    }
+    input {
+        width: 97%;
+        margin-top: 10px;
+        padding: 12px 0 12px 12px;
+        border: 1.5px solid #35373B;
+        border-radius: 4px;
+        background: #27292D;
+        caret-color: #C5C7CA;
+        color: #C5C7CA;
+    }
+    .comment-section{
+        background: #191920;
+        border-radius: 8px;
+        padding: 15px 16px;
+        margin: 16px 0;
+        .comment-icon{
+            width: 53px;
+            height: 48px;
+            background: #27292D;
+            border-radius: 50%;
+            font-size: 18px;
+            line-height: 22px;
+            margin: auto;
+            span{
+                position: relative;
+                top: 15px;
+                left: 14px;
+            }
+        }
+        textarea{
+            width: 100%;
+            background: #191920;
+            border: none;
+            resize: none;
+            margin: auto;
+            margin-left: 16px;
+            color: #7F8084;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+    .password-field{
+        input {
+            border: none !important;
+            border-radius: 0;
+            border-top: 1.5px solid #35373B !important;
+            border-bottom: 1.5px solid #35373B !important;
+            border-left: 1.5px solid #35373B !important;
+            border-radius: 4px 0 0 4px;
+        }
+        .anticon{
+            margin: 10px 10px;
+            font-size: 20px;
+            color: #7F8084;
+        }
+        .anticon:hover{
+            cursor: pointer;
+        }
+        .password-icon {
+            margin-top: 10px;
+            border-top: 1.5px solid #35373B;
+            border-bottom: 1.5px solid #35373B;
+            border-right: 1.5px solid #35373B;
+            border-radius: 0 4px 4px 0;
+        }
+    }
+    button {
+        width: 100%;
+        height: 43px;
+        background: #4A96FF;
+        border-radius: 4px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FFFFFF;
+        border: none;
+    }
+    button:hover{
+        cursor: pointer;
+    }
+    textarea:focus, input:focus{
+        outline: none;
+    }
+}

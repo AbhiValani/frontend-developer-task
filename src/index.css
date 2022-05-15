@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  font-family: 'Inter';
+}
+
+.flex--row{
+  display: flex;
+}
+
+.flex--column{
+  display: flex;
+  flex-direction: column;
+}
+
+.center{
+  justify-content: center;
+  align-items: center;
+}
+
+.jc-sb{
+  justify-content: space-between;
+}

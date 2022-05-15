@@ -1,0 +1,56 @@
+.recent-posts-ctr{
+    background: #27292D;
+    margin: 16px 0;
+    border: 2px solid #35373B;
+    border-radius: 8px;
+    padding: 24px 20px;
+    .post-header{
+        img{
+            border-radius: 8px;
+        }
+        .user-section{
+            width: 100%;
+            .profile-name{
+                font-weight: 500;
+                font-size: 16px;
+                margin-left: 16px;
+                line-height: 19px;
+                color: #C5C7CA;
+            }
+            .post-time{
+                margin-top: 4px;
+                margin-left: 16px;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+                color: #7F8084;
+                .dot{
+                    margin: 0 5px;
+                    height: 5px;
+                    width: 5px;
+                    vertical-align: middle;
+                    display: inline-block;
+                    border-radius: 50%;
+                    background: #7F8084;
+                }
+            }
+            .anticon{
+                font-size: 22px;
+                color: #C4C7CA;
+            }
+        }
+    }
+    .comment-ctr{
+        margin-top: 14px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #7F8084;
+        .chat-icon{
+            vertical-align: middle;
+        }
+        .comment{
+            margin-left: 8px;
+        }
+    }
+}
